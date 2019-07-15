@@ -1,0 +1,29 @@
+.body
+{
+    /* background-image: url(../image/travels2.png); */
+    background-color: gray;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+}
+.logoairline
+{
+    height: 100px;
+    width: 100px;
+}
+.navbar
+{
+    background-color: aliceblue;
+    opacity: 0.8%;
+
+}
+.item3
+{
+    margin-left: 40%;
+
+}
+.item4
+{
+    margin-left: 5%;
+
+}
