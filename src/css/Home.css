@@ -1,7 +1,7 @@
 .body
 {
-    /* background-image: url(../image/travels2.png); */
-    background-color: gray;
+    background-image: url(../image/travels2.png);
+    /* background-color: gray; */
     background-attachment: fixed;
     position: relative;
     background-size: cover;
@@ -14,7 +14,7 @@
 .navbar
 {
     background-color: aliceblue;
-    opacity: 0.8%;
+    opacity: 0.8;
 
 }
 .item3
