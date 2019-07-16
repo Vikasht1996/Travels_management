@@ -1,6 +1,6 @@
 .body
 {
-    background-image: url(../image/travels2.png);
+    background-image: url(../image/travels.jpg);
     /* background-color: gray; */
     background-attachment: fixed;
     position: relative;
@@ -15,7 +15,7 @@
 {
     background-color: aliceblue;
     opacity: 0.8;
-
+    height: 96px;
 }
 .item3
 {
@@ -25,5 +25,53 @@
 .item4
 {
     margin-left: 5%;
+}
+.hotel1
+{
+    height: 85%;
+    width: 100%;;
 
+}
+.check
+{
+    width: 149px;
+}
+.btn
+{
+    margin-top: 119px;
+    border-radius: 30%;
+    background-color: grey;
+}
+.hotel2
+{
+    height: 200px;
+    width: 200px;
+}
+.hotel3
+{
+    height: 470px;
+    width: 300px;
+}
+.hotel4
+{
+    height: 100px;
+    width: 140px;
+   
+}
+.card-body
+{
+    height: 255px;
+}
+.travel
+{
+    width: 150px;
+    height: 200px;
+}
+.logo
+{
+    width: 40px;
+    height: 40px;
+}
+footer{
+    background-color: black;
 }
