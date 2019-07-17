@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import Fadeoperation from './fadeoperation'
 import '../css/Home.css'
 import logo from '../image/airlinelogo.png'
-import hotel1 from '../image/hotel1.jpg'
 import hotel2 from '../image/hotel2.webp'
 import hotel3 from '../image/hotel3.jpeg'
 import hotel4 from '../image/hotel3.jpg'
@@ -14,6 +14,12 @@ import hirecar from '../image/hirecar.jpg'
 import cruise from '../image/cruise.jpg'
 import things from '../image/things.jpg'
 import fly from '../image/fly.jpg'
+import bestprice from '../image/bestprice.webp'
+import travelinsurence from '../image/travelinsurence.jpg'
+import why from '../image/why-you.jpg'
+import needhelp from '../image/needhelp.jpg'
+
+
 
 
 class Home extends Component {
@@ -21,26 +27,19 @@ class Home extends Component {
     return (
       <div class="body">
         <div class="navbar">
-          <span class="airlogo"><img src={logo} alt="golf" className="logoairline" />
-          </span>
+          <span class="airlogo"><img src={logo} alt="golf" className="logoairline" /></span>
           <span class="item2">Travels Management</span>
-          <span class="item3">Home
-					</span>
-          <span class="item4">Hotels
-					</span>
-          <span class="item4">Flights
-					</span>
-          <span class="item4">Destination
-					</span>
+          <span class="item3">Home</span>
+          <span class="item4"><a href="hotel.js">Hotels</a></span>
+          <span class="item4">Flights</span>
+          <span class="item4">Destination</span>
         </div>
         <div className="container"><br /><br />
           <div class="row">
             <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
-              <img src={hotel1} alt="golf" className="hotel1" />
-
+            <Fadeoperation/>            
             </div>
-
-          </div>
+          </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
           <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <h3>Where</h3><br />
@@ -100,9 +99,8 @@ class Home extends Component {
               <button class="btn">Search</button>
             </div>
           </div><br /><br />
-          <h2>Popular Destination</h2>
+          <h3>Popular Destination</h3>
           <div class="row">
-
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <img src={hotel2} alt="golf" className="hotel2" /><br />
               <h5>Sun City International Hotel</h5>
@@ -122,14 +120,14 @@ class Home extends Component {
               <img src={hotel5} alt="golf" className="hotel2" /><br />
               <h5>Piccadily Hotel New Delhi</h5>
               New Delhi      $4,500
-          </div>
+            </div>
           </div><br /><br />
           <div class="row">
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
               <img src={hotel6} alt="golf" className="hotel3" />
             </div>
             <div class="col-sm-8col-lg-8 col-md-8 col-xs-8">
-              <h1>Best places in summer vacation</h1>
+              <h3>Best places in summer vacation</h3>
               <p>Students are out of school, parents are ready for a break,
                 the weather is begging you to spend time together outdoors — summer
                  vacations are the perfect time for family bonding. Spending time with
@@ -159,7 +157,6 @@ class Home extends Component {
                       <button class="btn1">See All</button>
                     </div>
                   </div>
-
                 </div>
                 <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
                   <div class="card"  >
@@ -181,7 +178,7 @@ class Home extends Component {
                   <img src={hirecar} alt="golf" className="travel" /><br />
                 </div>
                 <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
-                  <h2>Hire Cars</h2>
+                  <h3>Hire Cars</h3>
                   <p>A car rental, hire car, or car hire agency is a company that
                     rents automobiles for short periods of time, generally ranging
                a few hours to a few weeks.</p>
@@ -192,14 +189,13 @@ class Home extends Component {
               <div class="row">
                 <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
                   <img src={cruise} alt="golf" className="travel" /><br />
-
                 </div>
                 <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
-                  <h2>Cruise Deals</h2>
+                  <h3>Cruise Deals</h3>
                   <p>A cruise ship is a passenger ship used for pleasure voyages when
-                     voyage itself, the ship's amenities, and sometimes the different
-                      destinations along the way (i.e., ports of call), form part of
-              the passengers' experience</p>
+                    voyage itself, the ship's amenities, and sometimes the different
+                    destinations along the way (i.e., ports of call), form part of
+                    the passengers' experience</p>
                 </div>
               </div>
             </div>
@@ -209,38 +205,79 @@ class Home extends Component {
               <div class="row">
                 <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
                   <img src={things} alt="golf" className="travel" /><br />
-
                 </div>
                 <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
-                  <h2>Things To Do</h2>
+                  <h3>Things To Do</h3>
                   <p>Things to Make and Do is the third album by the electronic/dance
-                    duo Moloko, released in the UK by Echo Records in 2000. It was a
-                    sonic departure for Moloko, with tracks less reliant on electronics
-               and more on live musicians</p>
+                  duo Moloko, released in the UK by Echo Records in 2000. It was a
+                  sonic departure for Moloko, with tracks less reliant on electronics
+                  and more on live musicians</p>
                 </div>
               </div>
-
-
             </div>
             <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
-
               <div class="row">
                 <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
                   <img src={fly} alt="golf" className="travel" /><br />
-
                 </div>
                 <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
-                  <h2>Fly In Comfort</h2>
+                  <h3>Fly In Comfort</h3>
                   <p>First class is a travel class on some passenger airliners intended
                     to be more luxurious than business class, premium economy, and economy
-              class.</p>
+                    class.</p>
                 </div>
               </div>
             </div>
           </div>
+          <center><h3>Company Offers</h3>
+            <p>The company provide offers like </p></center>
           <div class="row">
+          <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+          <div class="card"  >
+                    <div class="card-body" class="offer">
+                      <img src={bestprice} alt="golf" className="hotel4" /><br />
+                      <p>Best Rate Guaranteed (BRG), is one of the latest pricing 
+                        mechanisms, increasingly used by hotels and hotel chains around 
+                        the world. It was introduced as a result of the hotel industry
+                         mimicking the airline industry, which sets price by forecasting 
+                         demand.</p>
+                    </div>
+                  </div>
           </div>
-        </div>
+          <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+          <div class="card"  >
+                    <div class="card-body" class="offer">
+                      <img src={travelinsurence} alt="golf" className="hotel4" /><br />
+                      <p>Travel insurance is insurance that is intended to 
+                        cover medical expenses, trip cancellation, lost luggage, 
+                        flight accident and other losses incurred while traveling, 
+                        either internationally or domestically.
+                      </p>
+                    </div>
+                  </div>
+          </div>
+          <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+          <div class="card"  >
+                    <div class="card-body" class="offer">
+                      <img src={why} alt="golf" className="hotel4" /><br />
+                      <p>A travel agency is a private retailer or public service that provides 
+                        travel and tourism related services to the public on behalf of suppliers 
+                        such as activities, airlines, car rentals, cruise lines, hotels,
+                         railways, travel insurance, and</p>
+                    </div>
+                  </div>
+          </div>
+          <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+          <div class="card"  >
+                    <div class="card-body" class="offer">
+                      <img src={needhelp} alt="golf" className="hotel4" /><br />
+                      <p>If you need any help for realted to travels ask the company
+                         will help you </p>
+                    </div>
+                  </div>
+          </div>
+          </div>
+        </div><br/><br/>
         <footer>
           <div class="row">
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
@@ -255,10 +292,7 @@ class Home extends Component {
           </div>
         </footer>
       </div>
-
-
     );
   }
 }
-
 export default Home;

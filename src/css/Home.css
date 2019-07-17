@@ -1,6 +1,5 @@
 .body
 {
-    background-image: url(../image/travels.jpg);
     /* background-color: gray; */
     background-attachment: fixed;
     position: relative;
@@ -74,4 +73,12 @@
 }
 footer{
     background-color: black;
+}
+.offer
+{
+    height: 320px;
+    font-size:12px;
+}
+p{
+    font-size: 12px;
 }
