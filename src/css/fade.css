@@ -115,4 +115,16 @@
     -moz-animation-delay: 2s;
     -o-animation-delay: 2s;
     animation-delay: 2s;
-  }  
+  }
+  #ritu img:nth-of-type(4) {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+  } 
+  #ritu img:nth-of-type(5) {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+  }   

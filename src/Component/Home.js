@@ -26,14 +26,14 @@ class Home extends Component {
   render() {
     return (
       <div class="body">
-        <div class="navbar">
+        <nav class="navbar navbar-fixed-top">
           <span class="airlogo"><img src={logo} alt="golf" className="logoairline" /></span>
           <span class="item2">Travels Management</span>
-          <span class="item3">Home</span>
-          <span class="item4"><a href="hotel.js">Hotels</a></span>
+          <span class="item3"><a href="home">Home</a></span>
+          <span class="item4"><a href="hotels">Hotels</a></span>
           <span class="item4">Flights</span>
           <span class="item4">Destination</span>
-        </div>
+        </nav>
         <div className="container"><br /><br />
           <div class="row">
             <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
