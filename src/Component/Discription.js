@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel } from "react-responsive-carousel";
 import { Tabs, Tab } from 'react-tab-view'
-
 import logo from '../image/airlinelogo.png'
 import horbour1 from '../image/harbour1.webp'
 import horbour2 from '../image/horbour2.webp'
@@ -12,6 +11,8 @@ import horbour6 from '../image/horbour6.webp'
 import horbour7 from '../image/horbour7.webp'
 import horbour8 from '../image/horbour8.webp'
 import business from '../image/business.jpg'
+import Wherewhenwho from '../Component/wherewhenwho'
+
 class Discription extends Component {
   render() {
     const headers = ['Description', 'Availability', 'Amenities', 'Reviews', 'Things To Do','Write a Review']
@@ -58,8 +59,10 @@ class Discription extends Component {
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
           </div>
+          </div>
+          <div class="container">
           <div class="row">
-            <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
+            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
             <Tabs headers={headers}>
               <Tab>
                 <div class="row">
@@ -109,6 +112,11 @@ Cancellation Option. */}
                 </div>
               </Tab>
               <Tab>
+              <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+            <Wherewhenwho/>            
+            </div> 
+            </div>  
               </Tab>
               <Tab>
                 <p>This is the third tab</p>
@@ -125,7 +133,7 @@ Cancellation Option. */}
             </Tabs>
             </div>
           </div>
-          <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+          {/* <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div> */}
         </div>
         <footer>
           <div class="row">
