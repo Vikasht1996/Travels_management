@@ -11,11 +11,16 @@ import horbour6 from '../image/horbour6.webp'
 import horbour7 from '../image/horbour7.webp'
 import horbour8 from '../image/horbour8.webp'
 import business from '../image/business.jpg'
+import singleroom from '../image/singleroom.jpg'
+import doubleroom from '../image/doubleroom.webp'
 import Wherewhenwho from '../Component/wherewhenwho'
+import '../css/Discription.css'
+import Icons from '../Component/icons';
+import Star from '../Component/star';
 
 class Discription extends Component {
   render() {
-    const headers = ['Description', 'Availability', 'Amenities', 'Reviews', 'Things To Do','Write a Review']
+    const headers = ['Description', 'Availability', 'Amenities', 'Reviews', 'Things To Do', 'Write a Review']
     return (
       <div class="body">
         <div class="navbar ">
@@ -59,81 +64,188 @@ class Discription extends Component {
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
           </div>
-          </div>
-          <div class="container">
+        </div>
+        <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
-            <Tabs headers={headers}>
-              <Tab>
-                <div class="row">
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                {/* Hotel Type
-Extra People
-Minimum Stay
-Security Deposit
-Country
-City
-Cancellation Option. */}
-                <h6>Hotel Type:3star</h6>
-                <h6>Extra People:2/3</h6>
-                <h6>Minimum Stay:6</h6>
-                <h6>Security Deposit:voter id proof</h6>
-                <h6>Country:German</h6>
-                <h6>City:Frankfurt</h6>
-                <h6>Cancellation Option:yes</h6>
+            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12" class="tabs">
+              <Tabs headers={headers} >
+                <Tab ><br /><br />
+                  <div class="singleroom">
+                    <div class="row" >
+                      <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                        <h6>Hotel Type:3star</h6>
+                        <h6>Extra People:2/3</h6>
+                        <h6>Minimum Stay:6</h6>
+                        <h6>Security Deposit:voter id proof</h6>
+                        <h6>Country:German</h6>
+                        <h6>City:Frankfurt</h6>
+                        <h6>Cancellation Option:yes</h6>
 
-                </div>
-                <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
-                  <div class="row">
-                  <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
-                  <p>I am business man and every time i am going to business trip.
-                     I shared my experiene.When i went to germany the hotels and restorents are
-                     good. German people very friendly.
+                      </div>
+                      <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
+                        <div class="row">
+                          <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                            <p>I am business man and every time i am going to business trip.
+                               I shared my experiene.When i went to germany the hotels and restorents are
+                               good. German people very friendly.
                   </p>
 
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                            <img src={business} alt="golf" class="business" />
+                          </div>
+                          <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                            <h5>Business traveler</h5>
+                          </div>
+                          <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                            <div class="container">
+                              <input type="radio" class="radio" />
+                              <input type="radio" class="radio" />
+                              <input type="radio" class="radio" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <br /><br />
+                  <h5>About</h5>
+                  <div class="singleroom">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                        <h6>Leonardo Royal Hotel Frankfurt</h6>
+                        <p>Germany</p>
+                        <p>Warm, contemporary rooms with colorful decor have balconies
+                                 and city views, plus free Wi-Fi, flat-screen TVs, and tea
+                                 and coffeemaking facilities. Room service is available.
+                </p>
+                        <p>Breakfast is available for a surcharge. There's also an international
+                          restaurant, a cocktail lounge and a sports bar, as well as a fitness
+                           center and a business center. Pets are welcome (fee). Parking is
+                    available.</p>
+                      </div>
+
+                    </div>
                   </div>
+
+                </Tab>
+                <Tab><br /><br />
                   <div class="row">
-                  <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <img src={business} alt="golf" class="business" />
+                    <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                      <Wherewhenwho />
+                    </div>
                   </div>
-                  <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <h2>Business traveler</h2>
+                  <h4>Available Rooms</h4>
+                  <div class="singleroom">
+                    <div class="row">
+                      <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                        <h5>Single Cot Room</h5>
+                        <img src={singleroom} alt="golf" class="business" />
+
+                      </div>
+                      <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
+                        <h6>Leonardo Royal Hotel Frankfurt</h6>
+                        <p>Germany</p>
+                        <p>Warm, contemporary rooms with colorful decor have balconies
+                                 and city views, plus free Wi-Fi, flat-screen TVs, and tea
+                                 and coffeemaking facilities. Room service is available.
+                </p>
+                      </div>
+                      <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
+                        <p>Ava/Night</p>
+                        <p><b>$3,555</b></p>
+                        <button class="btn1">Book Now</button>
+                      </div>
+                    </div></div> <br /><br />
+                  <div class="singleroom">
+                    <div class="row">
+                      <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                        <h5>Double Cot Room</h5>
+                        <img src={doubleroom} alt="golf" class="business" />
+
+                      </div>
+                      <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
+                        <h6>Leonardo Royal Hotel Frankfurt</h6>
+                        <p>Germany</p>
+                        <p>Warm, contemporary rooms with colorful decor have balconies
+                                 and city views, plus free Wi-Fi, flat-screen TVs, and tea
+                                 and coffeemaking facilities. Room service is available.
+                </p>
+                      </div>
+                      <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
+                        <p>Ava/Night</p>
+                        <p><b>$5,129</b></p>
+                        <button class="btn1">Book Now</button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <div class="container">
-                  <input type="radio"/>
-                  <input type="radio"/>
-                  <input type="radio"/>
-                </div>
+                </Tab>
+                <Tab><br /><br />
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                      <Icons />
+                    </div>
                   </div>
-                  </div>
-                </div>
-                </div>
-              </Tab>
-              <Tab>
+                </Tab>
+                <Tab><br /><br />
               <div class="row">
-            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
-            <Wherewhenwho/>            
-            </div> 
-            </div>  
-              </Tab>
-              <Tab>
-                <p>This is the third tab</p>
-              </Tab>
-              <Tab>
-                <p>This is the third tab</p>
-              </Tab>
-              <Tab>
-                <p>This is the third tab</p>
-              </Tab>
-              <Tab>
-                <p>This is the third tab</p>
-              </Tab>
-            </Tabs>
+              <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+              <Star/>
+              </div>
+              <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
+                <div class="row">
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                  <h6>Service</h6>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                  <h6>Service</h6>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                  <Star/>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                  <h6>SLEEP QUALITY</h6>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                  <Star/>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                  <h6>Service</h6>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                </div>
+                <div class="row">
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+                  <h6>Service</h6>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
+                </div>
+              </div>
+
+                </div>                
+                </Tab>
+                <Tab><br /><br />
+                  <p>This is the third tab</p>
+                </Tab>
+                <Tab><br /><br />
+                  <p>This is the third tab</p>
+                </Tab>
+              </Tabs>
             </div>
           </div>
-          {/* <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div> */}
         </div>
         <footer>
           <div class="row">

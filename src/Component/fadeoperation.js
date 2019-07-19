@@ -17,7 +17,6 @@ class fadeoperation extends Component {
                     <img src={hotel4}/>
                     <img src={hotel5}/>
                     <img src={hotel9}/>
-
                 </div>  
             </div>
         );

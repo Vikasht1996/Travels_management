@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import Home from './Component/Home'
 import Hotels from './Component/hotel'
 import Discription from './Component/Discription'
-
-
+import Icons from './Component/icons'
+import Star from './Component/star'
 
 function App() {
   return (
@@ -17,6 +17,8 @@ function App() {
         <Route exact path='/home' component={Home}></Route>
         <Route exact path='/hotels' component={Hotels}></Route>
         <Route exact path='/discription' component={Discription}></Route>
+        <Route exact path='/icons' component={Icons}></Route>
+        <Route exact path='/star' component={Star}></Route>
       </Switch>
     </Router>
   );
