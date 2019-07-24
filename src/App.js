@@ -8,6 +8,8 @@ import Hotels from './Component/hotel'
 import Discription from './Component/Discription'
 import Icons from './Component/icons'
 import Star from './Component/star'
+import Signup from './Component/Registrationfrom'
+import Login from './Component/Loginform'
 
 function App() {
   return (
@@ -19,6 +21,10 @@ function App() {
         <Route exact path='/discription' component={Discription}></Route>
         <Route exact path='/icons' component={Icons}></Route>
         <Route exact path='/star' component={Star}></Route>
+        <Route exact path='/signup' component={Signup}></Route>
+        <Route exact path='/login' component={Login}></Route>
+
+
       </Switch>
     </Router>
   );

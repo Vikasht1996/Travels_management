@@ -156,7 +156,7 @@ class Discription extends Component {
                       <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
                         <p>Ava/Night</p>
                         <p><b>$3,555</b></p>
-                        <button class="btn1">Book Now</button>
+                        <button class="btn1"><a href='/signup'>Book Now</a></button>
                       </div>
                     </div></div> <br /><br />
                   <div class="singleroom">
@@ -177,7 +177,7 @@ class Discription extends Component {
                       <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
                         <p>Ava/Night</p>
                         <p><b>$5,129</b></p>
-                        <button class="btn1">Book Now</button>
+                        <button class="btn1"><a href='/signup'>Book Now</a></button>
                       </div>
                     </div>
                   </div>
