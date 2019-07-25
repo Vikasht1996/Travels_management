@@ -23,8 +23,6 @@ function App() {
         <Route exact path='/star' component={Star}></Route>
         <Route exact path='/signup' component={Signup}></Route>
         <Route exact path='/login' component={Login}></Route>
-
-
       </Switch>
     </Router>
   );

@@ -4,12 +4,13 @@ import { success } from '../Action/Loginaction'
 import {handle} from '../Action/Registeraction'
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import {login} from '../Component/userfunction'
 class Loginform extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      password: '',
+      Email: '',
+      Password: '',
       uerr: '',
       perr: ''
     }
@@ -20,34 +21,44 @@ class Loginform extends Component {
     
 
   }
-  onHandleClick = () => {
-    if (this.state.username.length === 0 && this.state.password.length === 0) {
+  onHandleClick = (e) => {
+    debugger;
+    e.preventDefault();
+    const reqst = {
+      Email: this.state.Email,
+      Password: this.state.Password
+    }
+    login(reqst).then(res => {
+      // if (firstname && username && email && password && confirmPassword && mobileNumber) {
+      // BrowserHistory.push('/login')
+})
+    if (this.state.Email.length === 0 && this.state.Password.length === 0) {
       this.setState({
-        uerr: "Username is required",
+        uerr: "Email is required",
         perr: "Password is required"
       })
     }
-    else if (this.state.username.length === 0) {
-      this.setState({ uerr: "Username is required" })
+    else if (this.state.Email.length === 0) {
+      this.setState({ uerr: "Email is required" })
     }
-    else if (this.state.password.length === 0) {
+    else if (this.state.Password.length === 0) {
       this.setState({ perr: "Password is required" })
     }
-    else if (this.state.username.match(/^[A-Za-z]{5}$/)) {
-      this.setState({ uerr: "Please enter the valid uname" })
-    }
-    else if (this.state.password.match(/^[@#][A-Za-z0-9]{9,11}$/)) {
-      this.setState({ perr: "Please enter the strong password" })
-    }
+    // else if (this.state.Email.match(/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]/)) {
+    //   this.setState({ uerr: "Please enter the valid email" })
+    // }
+    // else if (this.state.Password.match(/^[@#][A-Za-z0-9]{9,11}$/)) {
+    //   this.setState({ perr: "Please enter the strong password" })
+    // }
     else {
-      BrowserHistory.push('/home1')
+      // BrowserHistory.push('/book')
     }
     
   }
   onHandleClicks = () => {
-    BrowserHistory.push('/register')
-    const loginDetails = { username: this.state.username, password: this.state.password };
-    this.props.submitLogin(loginDetails);
+    BrowserHistory.push('/signup')
+    // const loginDetails = { username: this.state.username, password: this.state.password };
+    // this.props.submitLogin(loginDetails);
   }
   componentWillMount()
   {
@@ -64,14 +75,13 @@ class Loginform extends Component {
             <p>{this.props.message}</p>
 
               <h1>Login</h1>
-              <form >
                 <label ><b>Username</b></label><br />
-                <input type="text" name="username" className="two" onChange={this.onHandleChange} /><br />
+                <input type="text" name="Email" className="two" onChange={this.onHandleChange} /><br />
                 <p>{this.state.uerr}</p>
                 <label ><b>Password</b></label><br />
-                <input type="password" name="password" className="two" onChange={this.onHandleChange} /><br /><br />
+                <input type="password" name="Password" className="two" onChange={this.onHandleChange} /><br /><br />
                 <p>{this.state.perr}</p>
-              </form>
+              
               <button onClick={this.onHandleClick} className="btn2"><b>Login</b></button><a href="" onClick={this.onHandleClicks}>Register</a>
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
@@ -81,6 +91,7 @@ class Loginform extends Component {
       </div>
     );
   }
+  
 }
 const mapStoreToProps = (state) => {
   // const { message } = state.Loginreducer;
