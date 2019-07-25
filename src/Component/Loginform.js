@@ -30,7 +30,7 @@ class Loginform extends Component {
     }
     login(reqst).then(res => {
       // if (firstname && username && email && password && confirmPassword && mobileNumber) {
-      // BrowserHistory.push('/login')
+      BrowserHistory.push('/login')
 })
     if (this.state.Email.length === 0 && this.state.Password.length === 0) {
       this.setState({
@@ -44,14 +44,14 @@ class Loginform extends Component {
     else if (this.state.Password.length === 0) {
       this.setState({ perr: "Password is required" })
     }
-    // else if (this.state.Email.match(/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]/)) {
+    // else if (this.state.Email.match(/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]$/)) {
     //   this.setState({ uerr: "Please enter the valid email" })
     // }
-    // else if (this.state.Password.match(/^[@#][A-Za-z0-9]{9,11}$/)) {
-    //   this.setState({ perr: "Please enter the strong password" })
-    // }
+    else if (this.state.Password.match(/^[@#][A-Za-z0-9]{9,11}$/)) {
+      this.setState({ perr: "Please enter the strong password" })
+    }
     else {
-      // BrowserHistory.push('/book')
+      BrowserHistory.push('/book')
     }
     
   }

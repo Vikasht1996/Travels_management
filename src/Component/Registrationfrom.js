@@ -22,7 +22,6 @@ class Registrationfrom extends Component {
       perr: '',
       cperr: '',
       phnerr: '',
-      array: [],
 
 
     };
@@ -97,7 +96,7 @@ class Registrationfrom extends Component {
     // else if (this.state.Lastname.match(/^[A-Za-z]{5}$/)) {
     //   this.setState({ lerr: "Please enter the valid lname" })
     // }
-    // else if (this.state.Email.match(/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]/)) {
+    // else if (this.state.Email.match(/^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]$/)) {
     //   this.setState({ uerr: "Please enter the valid email" })
     // }
     else if (this.state.Password.match(/^[@#][A-Za-z0-9]{9,11}$/)) {
@@ -106,7 +105,7 @@ class Registrationfrom extends Component {
     else if (this.state.ConfirmPassword.match(/^[@#][A-Za-z0-9]{9,11}$/)) {
       this.setState({ cperr: "Please enter the valid password" })
     }
-    else if (this.state.Mobilenumber.match(/^[0-9]{9,10}$/)) {
+    else if (this.state.Mobilenumber.match(/^[0-9]{9}$/)) {
       this.setState({ phnerr: "Please enter the valid number" })
     }
 
