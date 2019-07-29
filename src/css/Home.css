@@ -1,6 +1,6 @@
 .body
 {
-    /* background-color: gray; */
+    background-image: url(../image/travelmanagement.jpg);
     background-attachment: fixed;
     position: relative;
     background-size: cover;
@@ -14,11 +14,11 @@
 {
     background-color: aliceblue;
     opacity: 0.8;
-    height: 96px;
+    padding:20px;
 }
 .item3
 {
-    margin-left: 40%;
+    margin-left: 28%;
 
 }
 .item4
@@ -35,12 +35,7 @@
 {
     width: 149px;
 }
-.btn
-{
-    margin-top: 119px;
-    border-radius: 30%;
-    background-color: grey;
-}
+
 .hotel2
 {
     height: 200px;
@@ -48,13 +43,13 @@
 }
 .hotel3
 {
-    height: 470px;
+    height: 440px;
     width: 300px;
 }
 .hotel4
 {
     height: 100px;
-    width: 140px;
+    width: 100%;
    
 }
 .card-body
@@ -63,7 +58,7 @@
 }
 .travel
 {
-    width: 150px;
+    width: 140px;
     height: 200px;
 }
 .logo
@@ -75,6 +70,12 @@ footer{
     background-color: black;
     width: 100%;
     color: white;
+    padding: 20px;
+    
+}
+.fp
+{
+    color:white;
 }
 .offer
 {
@@ -82,5 +83,42 @@ footer{
     font-size:12px;
 }
 p{
-    font-size: 12px;
+    font-size: 14px;
+    color:black;
+}
+span>a:hover{
+    text-decoration: none;
+    color: red;
+}
+.popular
+{
+    background-color: white;
+    opacity: 0.8;
+    padding:20px;
+}
+.best
+{
+    background-color:lightslategray;
+    opacity: 0.9;
+    padding :20px;  
+}
+.discription
+{
+background-color:lightgrey;
+padding:30px;
+}
+.total
+{
+    background-color:lightslategray;
+    opacity: 0.9;
+    padding :20px;  
+}
+.offers
+{
+    background-color:rgb(178, 66, 206);
+    padding:20px;
+    opacity: 0.8;
+}
+.fh6{
+    text-align: right;
 }

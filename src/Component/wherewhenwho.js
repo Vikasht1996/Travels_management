@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import '../css/where.css'
 
 class wherewhenwho extends Component {
     render() {
         return (
             <div>
-                <div class="container">
+                <div class="container" class="loccontainer">
                 <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <h3>Where</h3><br />
@@ -61,7 +62,7 @@ class wherewhenwho extends Component {
               </div>
             </div>
             <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
-              <button class="btn">Search</button>
+              <button class="search">Search</button>
             </div>
           </div><br /><br />
                 </div>

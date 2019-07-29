@@ -7,6 +7,8 @@ class icons extends Component {
             <div>
                 <div class="container" class="icon">
                     <div class="row">
+                    <div class="col2-sm-12 col-lg-12 col-md-12 col-xs-12">
+                    <div class="row">
                     <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
                     <i class="fa fa-wifi" aria-hidden="true"></i>
  
@@ -198,6 +200,8 @@ class icons extends Component {
 
                     </div>
                     </div>
+                    </div>
+                </div>
                 </div>
             </div>
         );

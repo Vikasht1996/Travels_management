@@ -1,0 +1,12 @@
+.loccontainer
+{
+background-color:lightgrey;
+padding:30px;
+opacity: 0.9;
+}
+.search
+{
+    margin-top: 119px;
+    border-radius: 30%;
+    background-color:blue;
+}

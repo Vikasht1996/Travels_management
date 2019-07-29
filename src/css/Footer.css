@@ -1,0 +1,50 @@
+#div8
+{
+    background-color: #E5E7E9;
+}
+.logo2
+{
+    height: 50px;
+}
+hr
+{
+    background-color:black;
+}
+.p10
+{
+    font-size: 20px;
+    color: black;
+    margin-top: 7px;
+}
+.p11
+{
+    font-size: 14px;
+    color: black;
+}
+.icon1
+{
+    font-size: 24px;
+    color: deeppink;
+    margin-top: 7px;
+}
+.icon2
+{
+    font-size: 24px;
+    color: rgb(67, 81, 122);
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.icon3
+{
+    font-size: 24px;
+    color: #85C1E9;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.icon4
+{
+    font-size: 24px;
+    color: red;
+    margin-top: 7px;
+    margin-left: 5px;
+}

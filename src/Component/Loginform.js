@@ -30,7 +30,7 @@ class Loginform extends Component {
     }
     login(reqst).then(res => {
       // if (firstname && username && email && password && confirmPassword && mobileNumber) {
-      BrowserHistory.push('/login')
+      BrowserHistory.push('/booknow')
 })
     if (this.state.Email.length === 0 && this.state.Password.length === 0) {
       this.setState({
@@ -51,7 +51,7 @@ class Loginform extends Component {
       this.setState({ perr: "Please enter the strong password" })
     }
     else {
-      BrowserHistory.push('/book')
+      BrowserHistory.push('/booknow')
     }
     
   }
@@ -72,7 +72,7 @@ class Loginform extends Component {
           <div class="row">
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm1">
-            <p>{this.props.message}</p>
+            {/* <p>{this.props.message}</p> */}
 
               <h1>Login</h1>
                 <label ><b>Username</b></label><br />

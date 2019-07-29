@@ -19,6 +19,7 @@ import travelinsurence from '../image/travelinsurence.jpg'
 import why from '../image/why-you.jpg'
 import needhelp from '../image/needhelp.jpg'
 import Wherewhenwho from '../Component/wherewhenwho'
+// import Footer from './Footer'
 
 
 
@@ -32,8 +33,8 @@ class Home extends Component {
           <span class="item2">Travels Management</span>
           <span class="item3"><a href="home">Home</a></span>
           <span class="item4"><a href="hotels">Hotels</a></span>
-          <span class="item4">Flights</span>
-          <span class="item4">Destination</span>
+          <span class="item4"><a href="#">Flights</a></span>
+          <span class="item4"><a href="#">Destination</a></span>
         </nav>
         <div className="container"><br /><br />
           <div class="row">
@@ -45,8 +46,9 @@ class Home extends Component {
             <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
             <Wherewhenwho/>            
             </div> 
-            </div>     
-          <h3>Popular Destination</h3>
+            </div>  <br/><br/>   
+          <h3>Popular Destination</h3><br/>
+          <div class="container" class="popular">
           <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <img src={hotel2} alt="golf" className="hotel2" /><br />
@@ -68,7 +70,9 @@ class Home extends Component {
               <h5>Piccadily Hotel New Delhi</h5>
               New Delhi      $4,500
             </div>
+          </div>
           </div><br /><br />
+          <div class="container" class="best">
           <div class="row">
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
               <img src={hotel6} alt="golf" className="hotel3" />
@@ -118,6 +122,9 @@ class Home extends Component {
               </div>
             </div>
           </div><br /><br />
+          </div><br/><br/>
+          <div class="container" class="total">
+          <div class="container" class="discription">
           <div class="row">
             <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
               <div class="row">
@@ -147,6 +154,8 @@ class Home extends Component {
               </div>
             </div>
           </div><br /><br />
+          </div><br/><br/>
+          <div class="container" class="discription">
           <div class="row">
             <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
               <div class="row">
@@ -176,6 +185,9 @@ class Home extends Component {
               </div>
             </div>
           </div>
+          </div>
+          </div><br/><br/>
+          <div class="container" class="offers">
           <center><h3>Company Offers</h3>
             <p>The company provide offers like </p></center>
           <div class="row">
@@ -210,7 +222,7 @@ class Home extends Component {
                       <p>A travel agency is a private retailer or public service that provides 
                         travel and tourism related services to the public on behalf of suppliers 
                         such as activities, airlines, car rentals, cruise lines, hotels,
-                         railways, travel insurance, and</p>
+                         railways, travel insurance.</p>
                     </div>
                   </div>
           </div>
@@ -224,20 +236,28 @@ class Home extends Component {
                   </div>
           </div>
           </div>
+          </div>
         </div><br/><br/>
         <footer>
           <div class="row">
-            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <img src={logo} alt="golf" className="logo" />
             </div>
-            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-              <p>www.travels.com</p>
+            <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
+              <span><a href="https://www.travel.com">www.travelmanagement.com</a></span>
+          <span><a href="https://www.facebook.com" class="fa fa-facebook"></a></span>
+          <span><a href="https://www.gmail.com" class="fa fa-google"></a></span>
+          <span><a href="https://www.instagram.com" class="fa fa-instagram"></a></span>
+          <span><a href="https://www.youtube.com" class="fa fa-youtube"></a></span>
+          <span><a href="https://www.linkedin.com" class="fa fa-linkedin"></a></span>
+          <span><a href="https://www.skype.com" class="fa fa-skype"></a></span>
             </div>
-            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-              <h6>@2019</h6>
+            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-">
+              <h6 class="fh6">copyright@2019</h6>
             </div>
           </div>
         </footer>
+        {/* <Footer/> */}
       </div>
     );
   }

@@ -12,14 +12,14 @@ import logo from '../image/airlinelogo.png'
 class hotel extends Component {
     render() {
         return (
-            <div class="body">
+            <div class="body" class="hoteldetails">
           <div class="navbar ">
           <span class="airlogo"><img src={logo} alt="golf" className="logoairline" /></span>
           <span class="item2">Travels Management</span>
-          <span class="item3">Home</span>
+          <span class="item3"><a href="home">Home</a></span>
           <span class="item4"><a href="hotels">Hotels</a></span>
-          <span class="item4">Flights</span>
-          <span class="item4">Destination</span>
+          <span class="item4"><a href="#">Flights</a></span>
+          <span class="item4"><a href="#">Destination</a></span>
         </div><br/><br/>
 
                 <div class="container">
@@ -28,7 +28,8 @@ class hotel extends Component {
                      <Fadeoperation/>            
                     </div>                    
                     </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                    <center><h3>Recommended Hotels</h3></center>
+                    <div class="container" class="recommended">
+                    <center><h3>Recommended Hotels</h3></center><br/>
                     <div class="row">
                     <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
                   <div class="card"  >
@@ -79,7 +80,9 @@ class hotel extends Component {
                   </div>
                 </div>
                     </div>
-                    <h3>Famous Hotel Details</h3>
+                    </div><br/><br/>
+                    <div class="container" class="famous">
+                    <h3>Famous Hotel Details</h3><br/>
                 <div class="row">
                 <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
                 <div class="row">
@@ -144,7 +147,9 @@ class hotel extends Component {
                 </div></center>
                 </div>
                 </div>  
-                <h3>Travels Hotels Choice</h3>
+                </div><br/><br/>
+                <div class="container" class="traveler">
+                <h3>Travels Hotels Choice</h3><br/>
                 <div class="row">
 
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
@@ -155,7 +160,7 @@ class hotel extends Component {
                       <p>Canada</p>
                       <p><b>$5,537</b></p>
                       <p>A/N</p>
-                      <p>****(5.5k)views</p>
+                      <p>****(5.5k)views</p><br/>
 
                       <button class="btn1">Select</button>
                     </div>
@@ -169,7 +174,7 @@ class hotel extends Component {
                       <p>Nigeria</p>
                       <p><b>$6,400</b></p>
                       <p>A/N</p>
-                      <p>***(4.0k)views</p>
+                      <p>***(4.0k)views</p><br/>
                       <button class="btn1">Select</button>
                     </div>
                   </div>
@@ -202,19 +207,26 @@ class hotel extends Component {
                 </div>
                 </div>
                 </div>
+                </div><br/><br/>
                 <footer>
           <div class="row">
-            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
+            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <img src={logo} alt="golf" className="logo" />
             </div>
-            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-              <p>www.travels.com</p>
+            <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
+              <span><a href="https://www.travel.com">www.travelmanagement.com</a></span>
+          <span><a href="https://www.facebook.com" class="fa fa-facebook"></a></span>
+          <span><a href="https://www.gmail.com" class="fa fa-google"></a></span>
+          <span><a href="https://www.instagram.com" class="fa fa-instagram"></a></span>
+          <span><a href="https://www.youtube.com" class="fa fa-youtube"></a></span>
+          <span><a href="https://www.linkedin.com" class="fa fa-linkedin"></a></span>
+          <span><a href="https://www.skype.com" class="fa fa-skype"></a></span>
             </div>
-            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-              <h6>@2019</h6>
+            <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+              <h6 class="fh6">copyright@2019</h6>
             </div>
           </div>
-        </footer>     
+        </footer>  
                 </div> 
         );
     }

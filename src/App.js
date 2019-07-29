@@ -10,6 +10,9 @@ import Icons from './Component/icons'
 import Star from './Component/star'
 import Signup from './Component/Registrationfrom'
 import Login from './Component/Loginform'
+import Booknow from './Component/bookNow'
+import Modal from './Component/model'
+
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
         <Route exact path='/star' component={Star}></Route>
         <Route exact path='/signup' component={Signup}></Route>
         <Route exact path='/login' component={Login}></Route>
+        <Route exact path='/booknow' component={Booknow}></Route>
       </Switch>
     </Router>
   );
