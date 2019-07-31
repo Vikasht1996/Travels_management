@@ -33,15 +33,28 @@ console.log(err)
 })
 }
 
-// export const studentProfile = profileuser => {
-// return axios
-// .post('users/studentProfile', {
-// studentname: profileuser. studentname,
-// address: profileuser. address,
-// email: profileuser.email,
-// mobileNumber: profileuser. mobileNumber
-// })
-// .catch(err => {
-// console.log(err)
-// })
-// }
+
+export const personalInfo = infoUser => {
+    debugger;
+    
+    return axios
+    .post('personinfo', {
+        
+    Firstname: infoUser.Firstname,
+    Lastname: infoUser.Lastname,
+    Email: infoUser.Email,
+    Verifyemail: infoUser.Verifyemail,
+    Countrycode: infoUser.Countrycode,
+    Mobilenumber: infoUser.Mobilenumber,
+    CardType: infoUser.CardType,
+    CardHolderName: infoUser.CardHolderName,
+    CardNumber: infoUser.CardNumber,
+    CardIdentificationNumber: infoUser.CardIdentificationNumber,
+    ExpirationDate: infoUser.ExpirationDate,
+    MonthYear: infoUser.MonthYear,
+    BillingZipCode: infoUser.BillingZipCode
+    })
+    .then(res => {
+    console.log(res)
+    })
+    }

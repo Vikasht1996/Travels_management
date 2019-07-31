@@ -29,8 +29,15 @@ class Loginform extends Component {
       Password: this.state.Password
     }
     login(reqst).then(res => {
-      // if (firstname && username && email && password && confirmPassword && mobileNumber) {
-      BrowserHistory.push('/booknow')
+      console.log(res);
+      if(res==="Login successfully"){
+        alert("login succesfull")
+        BrowserHistory.push('/booknow');
+        }
+        else
+        {
+        alert("login fail")
+        }
 })
     if (this.state.Email.length === 0 && this.state.Password.length === 0) {
       this.setState({
@@ -51,7 +58,7 @@ class Loginform extends Component {
       this.setState({ perr: "Please enter the strong password" })
     }
     else {
-      BrowserHistory.push('/booknow')
+      // BrowserHistory.push('/booknow')
     }
     
   }

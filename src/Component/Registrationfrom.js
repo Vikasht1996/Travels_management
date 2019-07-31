@@ -32,20 +32,26 @@ class Registrationfrom extends Component {
 
   }
   onHandleClicks = (e) => {
+    debugger;
     e.preventDefault();
     const reqst = {
       Email: this.state.Email,
       Password: this.state.Password
     }
     login(reqst).then(res => {
-      // if (firstname && username && email && password && confirmPassword && mobileNumber) {
-      // BrowserHistory.push('/login')
+      if(res.data==="Login successfully"){
+        alert("login succesfull")
+        BrowserHistory.push('/booknow');
+        }
+        else
+        alert("login fail")
 })
 
   }
 
 
   onHandleClick = (e) => {
+    debugger;
     e.preventDefault();
     const reqst = {
       Firstname: this.state.Firstname,
@@ -57,8 +63,11 @@ class Registrationfrom extends Component {
 
     }
     signup(reqst).then(res => {
-      // if (firstname && username && email && password && confirmPassword && mobileNumber) {
-      // BrowserHistory.push('/login')
+      // if(res.data==="User Created Succesfully"){
+      //   alert("UserCreated Successfully")
+      //   BrowserHistory.push('/login')
+      // }
+      
 })
       
       if (this.state.Firstname.length === 0 && this.state.Lastname.length === 0 && this.state.Email.length === 0 && this.state.Password.length === 0 && this.state.ConfirmPassword.length===0 && this.state.Mobilenumber.length===0) {
