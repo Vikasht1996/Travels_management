@@ -12,8 +12,9 @@ import Signup from './Component/Registrationfrom'
 import Login from './Component/Loginform'
 import Booknow from './Component/bookNow'
 import Modal from './Component/model'
-
-
+import Paris from './Component/paris'
+import London from './Component/london'
+import Singapore from './Component/singapore'
 function App() {
   return (
     <Router>
@@ -27,6 +28,9 @@ function App() {
         <Route exact path='/signup' component={Signup}></Route>
         <Route exact path='/login' component={Login}></Route>
         <Route exact path='/booknow' component={Booknow}></Route>
+        <Route exact path='/paris' component={Paris}></Route>
+        <Route exact path='/london' component={London}></Route>
+        <Route exact path='/singapore' component={Singapore}></Route>
       </Switch>
     </Router>
   );

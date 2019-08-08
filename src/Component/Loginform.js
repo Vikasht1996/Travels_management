@@ -16,10 +16,7 @@ class Loginform extends Component {
     }
   }
   onHandleChange = (event) => {
-
     this.setState({ [event.target.name]: event.target.value });
-    
-
   }
   onHandleClick = (e) => {
     debugger;

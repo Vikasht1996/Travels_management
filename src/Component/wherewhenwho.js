@@ -1,7 +1,58 @@
 import React, { Component } from 'react';
 import '../css/where.css'
+import BrowserHistory from '../utilize/BrowserHistory'
+// import {list_all_task} from '../Component/userfunction'
 
 class wherewhenwho extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      LocationName:'',
+      repos:[]
+    }}
+    onHandleChange = (event) => {
+      this.setState({ [event.target.name]: event.target.value });
+    }
+    // onHandlesearch = (e) => {
+    //   e.preventDefault();
+    //   const reqst = {
+    //     LocationName: this.state.LocationName
+    //   }
+    //   list_all_task(reqst).then(res => {
+    //     console.log(res);
+    //     if(res===this.state.LocationName)
+    //     {
+    //       BrowserHistory.push('./paris')
+    //     }
+    //     else if(res===this.state.LocationName)
+    //     {
+    //       BrowserHistory.push('./london')
+    //     }
+    //     else if(res===this.state.LocationName)
+    //     {
+    //       BrowserHistory.push('./singapore')
+    //     }
+    //     else{
+    //       alert("This place information is not available")
+    //     }
+    //   })
+
+
+    // }
+
+    onHandlesearch = (user) => {
+      debugger;
+      console.log(user);
+      let url = 'http://localhost:8000/location?LocationName=' + user
+      fetch(url).
+      then(response => response.json()).then((repos) => {
+      console.log(repos);
+      console.log(repos.length);
+      this.setState({
+      repos: repos
+      });
+      });
+      };
     render() {
         return (
             <div>
@@ -10,7 +61,7 @@ class wherewhenwho extends Component {
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <h3>Where</h3><br />
               <label ><b>Your Destination</b></label><br />
-              <input type="text" placeholder="enter your destination" /><br />
+              <input type="text" name="LocationName"  onChange={this.onHandleChange} value={this.state.LocationName}/><br />
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
               <h3>When</h3><br />
@@ -62,7 +113,7 @@ class wherewhenwho extends Component {
               </div>
             </div>
             <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
-              <button class="search">Search</button>
+              <button  onClick={this.onHandlesearch} class="search">Search</button>
             </div>
           </div><br /><br />
                 </div>

@@ -34,9 +34,7 @@ console.log(err)
 }
 
 
-export const personalInfo = infoUser => {
-    debugger;
-    
+export const personalInfo = infoUser => {    
     return axios
     .post('personinfo', {
         
