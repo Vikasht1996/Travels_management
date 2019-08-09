@@ -15,6 +15,8 @@ import Modal from './Component/model'
 import Paris from './Component/paris'
 import London from './Component/london'
 import Singapore from './Component/singapore'
+import Dummy from './Component/dummy'
+
 function App() {
   return (
     <Router>
@@ -31,6 +33,8 @@ function App() {
         <Route exact path='/paris' component={Paris}></Route>
         <Route exact path='/london' component={London}></Route>
         <Route exact path='/singapore' component={Singapore}></Route>
+        <Route exact path='/dummy' component={Dummy}></Route>
+
       </Switch>
     </Router>
   );

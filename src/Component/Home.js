@@ -95,7 +95,7 @@ class Home extends Component {
                       <img src={hotel7} alt="golf" className="hotel4" /><br />
                       <h6>Novotel Paris Est</h6><br />
                       <p>Paris(31)</p>
-                      <button class="btn1">See All</button>
+                      <button class="btn1"><a href='/paris'>See All</a></button>
                     </div>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ class Home extends Component {
                       <img src={hotel8} alt="golf" className="hotel4" /><br />
                       <h6>Bulgari Hotel, London</h6>
                       <p>London(10)</p>
-                      <button class="btn1">See All</button>
+                      <button class="btn1"><a href='/london'>See All</a></button>
                     </div>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ class Home extends Component {
                       <img src={hotel9} alt="golf" className="hotel4" /><br />
                       <h6>HotelVillage Hotel Albert Court</h6>
                       <p>Singapore(47)</p>
-                      <button class="btn1">See All</button>
+                      <button class="btn1"><a href='/singapore'>See All</a></button>
                     </div>
                   </div>
                 </div>

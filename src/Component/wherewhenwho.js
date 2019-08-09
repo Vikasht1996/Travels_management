@@ -2,60 +2,91 @@ import React, { Component } from 'react';
 import '../css/where.css'
 import BrowserHistory from '../utilize/BrowserHistory'
 // import {list_all_task} from '../Component/userfunction'
+import axios from 'axios';
+
 
 class wherewhenwho extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      LocationName:'',
-      repos:[]
+      // LocationName:'',
+      Users: []
     }}
     onHandleChange = (event) => {
       this.setState({ [event.target.name]: event.target.value });
     }
-    // onHandlesearch = (e) => {
-    //   e.preventDefault();
-    //   const reqst = {
-    //     LocationName: this.state.LocationName
-    //   }
-    //   list_all_task(reqst).then(res => {
-    //     console.log(res);
-    //     if(res===this.state.LocationName)
-    //     {
-    //       BrowserHistory.push('./paris')
-    //     }
-    //     else if(res===this.state.LocationName)
-    //     {
-    //       BrowserHistory.push('./london')
-    //     }
-    //     else if(res===this.state.LocationName)
-    //     {
-    //       BrowserHistory.push('./singapore')
-    //     }
-    //     else{
-    //       alert("This place information is not available")
-    //     }
+   
+
+    // onHandlesearch = () => {
+    //   debugger;
+    //   // LocationName=this.state.LocationName
+    //   console.log("axios ====", axios)
+    // axios.get('http://localhost:8000/location')
+    // //   .then((res) => {}
+    // //     )
+    //   .then((data) => {
+    //     this.setState({ contacts: data.data.response });
     //   })
+    //   .catch((error) => {
+    //       debugger
+    //       console.log("error ====", error)
+    // });
+    //   }
+
+    // onHnadlesearch(){
+    //   axios.get('http://localhost:8000/location')
+    //   .then(res => { 
+    //   this.setState({contacts: res.data});
+    //   console.log(this.state.contacts);
+    //   });
+    //   }
 
 
-    // }
-
-    onHandlesearch = (user) => {
-      debugger;
-      console.log(user);
-      let url = 'http://localhost:8000/location?LocationName=' + user
-      fetch(url).
-      then(response => response.json()).then((repos) => {
-      console.log(repos);
-      console.log(repos.length);
-      this.setState({
-      repos: repos
-      });
-      });
-      };
+    componentDidMount() {
+      axios.get('http://localhost:8000/location')
+          .then(res => {
+              this.setState({ Users: res.data });
+              console.log(this.state.Users);
+          });
+        }
+          // onHandlesearch()
+          // {
+          // const check=this.Users.map()
+          // if(check.LocationName===this.state.LocationName)
+          // {
+          //   BrowserHistory.push('./paris')
+          // }
+          // if(check.LocationName===this.state.LocationName)
+          // {
+          //   BrowserHistory.push('./london')
+          // }
+          // if(check.LocationName===this.state.LocationName)
+          // {
+          //   BrowserHistory.push('./singapore')
+          // }
+          // }
+  
     render() {
         return (
-            <div>
+          <div>
+          {this.state.Users.map(location => {
+            // if(location.LocationName===this.state.LocationName)
+           return(
+             <h1>{location.LocationName}</h1>
+           )
+          })}
+           {/* {this.state.Users.map(location => {
+            if(location.LocationName===this.state.LocationName)
+           return(
+             BrowserHistory.push('./london')
+           )
+          })}
+ {this.state.Users.map(location => {
+            if(location.LocationName===this.state.LocationName)
+           return(
+             BrowserHistory.push('./singapore')
+           )
+          })} */}
                 <div class="container" class="loccontainer">
                 <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
@@ -121,5 +152,4 @@ class wherewhenwho extends Component {
         );
     }
 }
-
 export default wherewhenwho;
