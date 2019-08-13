@@ -16,6 +16,7 @@ import Paris from './Component/paris'
 import London from './Component/london'
 import Singapore from './Component/singapore'
 import Dummy from './Component/dummy'
+import writereview from './Component/writeareview'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route exact path='/london' component={London}></Route>
         <Route exact path='/singapore' component={Singapore}></Route>
         <Route exact path='/dummy' component={Dummy}></Route>
+        <Route exact path='/writereview' component={writereview}></Route>
 
       </Switch>
     </Router>

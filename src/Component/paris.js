@@ -16,15 +16,9 @@ class paris extends Component {
 
   componentDidMount() {
     debugger;
-    //    axios.get('http://localhost:8000/p')
-    //     . then(res => { 
-    //     this.setState({contacts: res.data});
-    //     console.log(this.state.contacts);
-    //     });
     console.log("axios ====", axios)
     axios.get('http://localhost:8000/p')
-      //   .then((res) => {}
-      //     )
+     
       .then((data) => {
         this.setState({ contacts: data.data.response });
       })

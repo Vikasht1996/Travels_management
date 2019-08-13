@@ -56,3 +56,14 @@ export const personalInfo = infoUser => {
     console.log(res)
     })
     }
+    export const reviewInfo = reviewUser => {   
+        debugger; 
+        return axios
+        .post('reviewinfo', {
+            Title: reviewUser.Title,
+            Yourreviews: reviewUser.Yourreviews,
+        })
+        .then(res => {
+        console.log(res)
+        })
+        }

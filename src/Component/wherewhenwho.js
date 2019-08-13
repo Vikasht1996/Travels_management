@@ -1,98 +1,34 @@
 import React, { Component } from 'react';
 import '../css/where.css'
 import BrowserHistory from '../utilize/BrowserHistory'
-// import {list_all_task} from '../Component/userfunction'
-import axios from 'axios';
-
-
 class wherewhenwho extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // LocationName:'',
-      Users: []
+      Name:'',
     }}
     onHandleChange = (event) => {
-      this.setState({ [event.target.name]: event.target.value });
+      // this.setState({ [event.target.value]: event.target.value });
+      const Name =  event.target.value
+        this.setState({ Name })
     }
-   
-
-    // onHandlesearch = () => {
-    //   debugger;
-    //   // LocationName=this.state.LocationName
-    //   console.log("axios ====", axios)
-    // axios.get('http://localhost:8000/location')
-    // //   .then((res) => {}
-    // //     )
-    //   .then((data) => {
-    //     this.setState({ contacts: data.data.response });
-    //   })
-    //   .catch((error) => {
-    //       debugger
-    //       console.log("error ====", error)
-    // });
-    //   }
-
-    // onHnadlesearch(){
-    //   axios.get('http://localhost:8000/location')
-    //   .then(res => { 
-    //   this.setState({contacts: res.data});
-    //   console.log(this.state.contacts);
-    //   });
-    //   }
-
-
-    componentDidMount() {
-      axios.get('http://localhost:8000/location')
-          .then(res => {
-              this.setState({ Users: res.data });
-              console.log(this.state.Users);
-          });
-        }
-          // onHandlesearch()
-          // {
-          // const check=this.Users.map()
-          // if(check.LocationName===this.state.LocationName)
-          // {
-          //   BrowserHistory.push('./paris')
-          // }
-          // if(check.LocationName===this.state.LocationName)
-          // {
-          //   BrowserHistory.push('./london')
-          // }
-          // if(check.LocationName===this.state.LocationName)
-          // {
-          //   BrowserHistory.push('./singapore')
-          // }
-          // }
-  
+    
+Search = async () => {
+  debugger
+  let path=this.state.Name;
+  BrowserHistory.push(`/${path}`); 
+}
     render() {
+      const { Name } = this.state
         return (
           <div>
-          {this.state.Users.map(location => {
-            // if(location.LocationName===this.state.LocationName)
-           return(
-             <h1>{location.LocationName}</h1>
-           )
-          })}
-           {/* {this.state.Users.map(location => {
-            if(location.LocationName===this.state.LocationName)
-           return(
-             BrowserHistory.push('./london')
-           )
-          })}
- {this.state.Users.map(location => {
-            if(location.LocationName===this.state.LocationName)
-           return(
-             BrowserHistory.push('./singapore')
-           )
-          })} */}
+         
                 <div class="container" class="loccontainer">
                 <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <h3>Where</h3><br />
               <label ><b>Your Destination</b></label><br />
-              <input type="text" name="LocationName"  onChange={this.onHandleChange} value={this.state.LocationName}/><br />
+              <input type="text" value= {this.state.Name}  onChange={this.onHandleChange} name="Name"/><br />
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
               <h3>When</h3><br />
@@ -144,7 +80,7 @@ class wherewhenwho extends Component {
               </div>
             </div>
             <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
-              <button  onClick={this.onHandlesearch} class="search">Search</button>
+              <button  onClick={this.Search} class="search">Search</button>
             </div>
           </div><br /><br />
                 </div>

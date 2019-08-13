@@ -1,0 +1,61 @@
+.write
+{
+    background-color:lightgrey;
+    padding: 20px;
+}
+.review
+{
+    background-color: white;
+    padding: 20px;
+    height: 450px
+}
+.parks
+{
+    height: 150px;
+    width: 200px;
+}
+.rate,.google
+{
+    color :gold;
+}
+.rates
+{
+    color:gold;
+    font-size: 30px;
+}
+.rates1
+{
+    font-size: 30px;
+    color: lightgray
+}
+.rate1
+{
+    color: lightgray;
+}
+.blue
+{
+    color:blue;
+    font-weight: bold;
+    font-size: 11px;
+}
+.enterreview
+{
+    width: 700px;
+    height: 40px;
+    padding: 10px;
+}
+.yourreview
+{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+.subrive
+{
+    background-color: greenyellow;
+    color: white;
+    font-weight: bold;
+    width: 500px;
+    height: 60px;
+
+}

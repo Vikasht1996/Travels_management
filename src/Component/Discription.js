@@ -14,9 +14,13 @@ import business from '../image/business.jpg'
 import singleroom from '../image/singleroom.jpg'
 import doubleroom from '../image/doubleroom.webp'
 import Wherewhenwho from '../Component/wherewhenwho'
+import Slider from '../Component/slider'
 import '../css/Discription.css'
 import Icons from '../Component/icons';
 import Star from '../Component/star';
+import Things from '../Component/thingstodo'
+import Write from '../Component/writeareview'
+import Review from '../Component/review'
 
 class Discription extends Component {
   render() {
@@ -70,7 +74,7 @@ class Discription extends Component {
             <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12" class="tabs">
               <Tabs headers={headers} >
                 <Tab ><br /><br />
-                  <div class="singleroom">
+                  {/* <div class="singleroom">
                     <div class="row" >
                       <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
                         <h6>Hotel Type:3star</h6>
@@ -82,8 +86,8 @@ class Discription extends Component {
                         <h6>Cancellation Option:yes</h6>
 
                       </div>
-                      <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
-                        <div class="row">
+                      <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8"> */}
+                        {/* <div class="row">
                           <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
                             <p>I am business man and every time i am going to business trip.
                                I shared my experiene.When i went to germany the hotels and restorents are
@@ -106,10 +110,19 @@ class Discription extends Component {
                               <input type="radio" class="radio" />
                             </div>
                           </div>
-                        </div>
-                      </div>
+                        </div> */}
+                        <Slider/>
+                      {/* </div>
                     </div>
+                  </div> */}
+                  {/* <div class="container">
+                  <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                  <Slider/>
                   </div>
+                  </div>
+                  </div> */}
+
                   <br /><br />
                   <h5>About</h5>
                   <div class="singleroom">
@@ -190,58 +203,13 @@ class Discription extends Component {
                   </div>
                 </Tab>
                 <Tab><br /><br />
-              <div class="row">
-              <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-              <Star/>
-              </div>
-              <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
-                <div class="row">
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <h6>Service</h6>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                </div>
-                <div class="row">
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <h6>Service</h6>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <Star/>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <h6>SLEEP QUALITY</h6>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <Star/>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <h6>Service</h6>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                </div>
-                <div class="row">
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
-                  <h6>Service</h6>
-                </div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
-                </div>
-              </div>
-
-                </div>                
+                   <Review/>  
                 </Tab>
                 <Tab><br /><br />
-                  <p>This is the third tab</p>
+                  <Things/>
                 </Tab>
                 <Tab><br /><br />
-                  <p>This is the third tab</p>
+                <Write/>
                 </Tab>
               </Tabs>
             </div>
