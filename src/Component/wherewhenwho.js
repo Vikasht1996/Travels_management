@@ -19,10 +19,9 @@ Search = async () => {
   BrowserHistory.push(`/${path}`); 
 }
     render() {
-      const { Name } = this.state
+     
         return (
           <div>
-         
                 <div class="container" class="loccontainer">
                 <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">

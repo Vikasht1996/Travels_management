@@ -58,7 +58,7 @@ class paris extends Component {
                   </div>
                   <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
                     <p>Ava/Night</p>
-                    <p><b>Praise:{paris.Amount}</b></p>
+                    <p><b>Price:{paris.Amount}</b></p>
                     <button class="btn1"><a href='/booknow'>Book Now</a></button>
                   </div>
 
@@ -86,7 +86,7 @@ class paris extends Component {
                   </div>
                   <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
                     <p>Ava/Night</p>
-                    <p><b>Praise:{paris.Amount}</b></p>
+                    <p><b>Price:{paris.Amount}</b></p>
                     <button class="btn1"><a href='/booknow'>Book Now</a></button>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ class paris extends Component {
                   </div>
                   <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
                     <p>Ava/Night</p>
-                    <p><b>Praise:{paris.Amount}</b></p>
+                    <p><b>Price:{paris.Amount}</b></p>
                     <button class="btn1"><a href='/booknow'>Book Now</a></button>
                   </div>
                 </div>

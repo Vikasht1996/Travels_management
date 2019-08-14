@@ -49,7 +49,7 @@ class singapore extends Component {
                                     </div>
                                     <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
                                         <p>Ava/Night</p>
-                                        <p><b>Praise:{singapore.Amount}</b></p>
+                                        <p><b>Price:{singapore.Amount}</b></p>
                                         <button class="btn1"><a href='/booknow'>Book Now</a></button>
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@ class singapore extends Component {
                                     </div>
                                     <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2">
                                         <p>Ava/Night</p>
-                                        <p><b>Praise:{singapore.Amount}</b></p>
+                                        <p><b>Price:{singapore.Amount}</b></p>
                                         <button class="btn1"><a href='/booknow'>Book Now</a></button>
                                     </div>
 

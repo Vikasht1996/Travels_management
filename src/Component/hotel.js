@@ -39,7 +39,7 @@ class hotel extends Component {
                       <p>Canada</p>
                       <p><b>$5,537</b></p>
                       <p>A/N</p>
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                     </div>
                   </div>
                 </div>
@@ -51,7 +51,7 @@ class hotel extends Component {
                       <p>Nigeria</p>
                       <p><b>$6,400</b></p>
                       <p>A/N</p>
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                     </div>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ class hotel extends Component {
                       <p>Kuala Lumpur</p>
                       <p><b>$2,314</b></p>
                       <p>A/N</p>
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                     </div>
                   </div>
                 </div>
@@ -75,7 +75,7 @@ class hotel extends Component {
                       <p>Germany</p>
                       <p><b>$5,129</b></p>
                       <p>A/N</p>
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                     </div>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ class hotel extends Component {
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
                       <p>Ava/Night</p>
                       <p><b>$5,537</b></p>
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                 </div>
                 </div>
                 <div class="row">
@@ -120,7 +120,7 @@ class hotel extends Component {
                 <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
                 <p>Ava/Night</p>
                       <p><b>$5,129</b></p>
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                 </div>
                 </div>
                 </div>
@@ -137,14 +137,7 @@ class hotel extends Component {
                      good. German people very friendly.
                   </p>
                 </div>
-
-
                 </div>
-                <center><div class="container">
-                  <input type="radio"/>
-                  <input type="radio"/>
-                  <input type="radio"/>
-                </div></center>
                 </div>
                 </div>  
                 </div><br/><br/>
@@ -162,7 +155,7 @@ class hotel extends Component {
                       <p>A/N</p>
                       <p>****(5.5k)views</p><br/>
 
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                     </div>
                   </div>
                 </div>
@@ -175,7 +168,7 @@ class hotel extends Component {
                       <p><b>$6,400</b></p>
                       <p>A/N</p>
                       <p>***(4.0k)views</p><br/>
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                     </div>
                   </div>
                 </div>
@@ -188,7 +181,7 @@ class hotel extends Component {
                       <p><b>$2,314</b></p>
                       <p>A/N</p>
                       <p>**(3.5k)views</p>
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                     </div>
                   </div>
                 </div>
@@ -201,7 +194,7 @@ class hotel extends Component {
                       <p><b>$5,129</b></p>
                       <p>A/N</p>
                       <p>*****(6.0k)views</p>
-                      <button class="btn1">Select</button>
+                      <a href="booknow"><button class="btn1" >Select</button></a>
                     </div>
                   </div>
                 </div>

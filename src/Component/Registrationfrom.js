@@ -63,10 +63,10 @@ class Registrationfrom extends Component {
 
     }
     signup(reqst).then(res => {
-      // if(res.data==="User Created Succesfully"){
-      //   alert("UserCreated Successfully")
-      //   BrowserHistory.push('/login')
-      // }
+      if(res.data==="User Created Succesfully"){
+        alert("UserCreated Successfully")
+        BrowserHistory.push('/login')
+      }
       
 })
       

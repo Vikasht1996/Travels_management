@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import {Elements, StripeProvider} from 'react-stripe-elements';
 import Home from './Component/Home'
 import Hotels from './Component/hotel'
 import Discription from './Component/Discription'
@@ -17,6 +18,7 @@ import London from './Component/london'
 import Singapore from './Component/singapore'
 import Dummy from './Component/dummy'
 import writereview from './Component/writeareview'
+import CheckoutForm from './Component/CheckoutForm';
 
 function App() {
   return (
@@ -36,7 +38,13 @@ function App() {
         <Route exact path='/singapore' component={Singapore}></Route>
         <Route exact path='/dummy' component={Dummy}></Route>
         <Route exact path='/writereview' component={writereview}></Route>
-
+        <StripeProvider apiKey="pk_test_TYooMQauvdEDq54NiTphI7jx">
+        <div className="example">
+          <Elements>
+            <CheckoutForm />
+          </Elements>
+        </div>
+      </StripeProvider>
       </Switch>
     </Router>
   );

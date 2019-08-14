@@ -27,13 +27,12 @@ class Loginform extends Component {
     }
     login(reqst).then(res => {
       console.log(res);
-      if(res==="Login successfully"){
-        alert("login succesfull")
-        BrowserHistory.push('/booknow');
+      if(res==="User does not exist" || res==="wrong password"){
+        // alert(res)
         }
         else
         {
-        alert("login fail")
+          BrowserHistory.push('/booknow');
         }
 })
     if (this.state.Email.length === 0 && this.state.Password.length === 0) {

@@ -47,7 +47,7 @@ class bookNow extends Component {
     }
     personalInfo(reqst1).then(res => {
       // if (firstname && username && email && password && confirmPassword && mobileNumber) {
-      // BrowserHistory.push('/home')
+BrowserHistory.push('/CheckoutForm')
     })
   }
   render() {
@@ -69,7 +69,7 @@ class bookNow extends Component {
               <div class="container" class="userinfo">
                 <div class="row">
                   <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
-                    <h1>Information</h1>
+                    <h4>Information</h4>
                     <label><b>First Name</b></label><br />
                     <input type="text" name="Firstname" className="one" onChange={this.onHandleChange} /><br />
                     <label><b>Last Name</b></label><br />
@@ -84,7 +84,7 @@ class bookNow extends Component {
                     <input type="text" name="Mobilenumber" className="one" onChange={this.onHandleChange} /><br /><br />
                   </div>
                   <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
-                    <h1>CardInformation</h1>
+                    <h4>CardInformation</h4>
                     <label><b>CardType</b></label><br />
                     <input type="text" name="CardType" className="one" onChange={this.onHandleChange} /><br /><br />
                     <label><b>CardHolderName</b></label><br />
@@ -95,13 +95,13 @@ class bookNow extends Component {
                     <input type="text" name="CardIdentificationNumber" className="one" onChange={this.onHandleChange} /><br /><br />
                     <label ><b>ExpirationDate</b></label><br />
                     <input type="date" name="ExpirationDate" className="one" onChange={this.onHandleChange} /><br /><br />
-                    <label ><b>MonthYear</b></label><br />
+                    <label ><b>Year</b></label><br />
                     <input type="text" name="MonthYear" className="one" onChange={this.onHandleChange} /><br /><br />
                     <label ><b>BillingZipCode</b></label><br />
                     <input type="text" name="BillingZipCode" className="one" onChange={this.onHandleChange} /><br /><br />
                   </div>
                 </div>
-                <center><button onClick={this.onHandleClick} className="btn1"><b>Save</b></button><a href="" onClick={this.onHandleClicks}>Cancel</a></center>                    </div>
+                <center><button onClick={this.onHandleClick} className="btn1"><b>Pay Now</b></button><a href="booknow" onClick={this.onHandleClicks}>Cancel</a></center>                    </div>
             </div>
             <div class="col-sm-2 col-lg-2 col-md-2 col-xs-2"></div>
           </div>
