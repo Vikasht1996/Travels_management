@@ -1,27 +1,27 @@
-import Modal  from 'react-bootstrap-modal'
+import Modal from 'react-bootstrap-modal'
 import React, { Component } from 'react';
 
- 
+
 class ModalExample extends React.Component {
- 
-  render(){
+
+  render() {
     let closeModal = () => this.setState({ open: false })
- 
+
     // let saveAndClose = () => {
     //   api.saveData()
     //     .then(() => this.setState({ open: false }))
     // }
- 
+
     return (
       <div>
         <button type='button'>Launch modal</button>
- 
+
         <Modal
           show={this.state.open}
           onHide={closeModal}
           aria-labelledby="ModalHeader">
 
-         <Modal.Header closeButton>
+          <Modal.Header closeButton>
             <Modal.Title id='ModalHeader'>A Title Goes here</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -32,16 +32,16 @@ class ModalExample extends React.Component {
             // the convenient `Dismiss` component, it will
             // trigger `onHide` when clicked
             <Modal.Dismiss className='btn btn-default'>Cancel</Modal.Dismiss>
- 
+
             // Or you can create your own dismiss buttons
             <button className='btn btn-primary'>
               Save
             </button>
           </Modal.Footer>
         </Modal>
-        </div>
+      </div>
     )
   }
 }
- 
-export default (<ModalExample />, document.body);
+
+export default (<ModalExample /> , document.body);

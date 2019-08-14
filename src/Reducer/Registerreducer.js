@@ -9,7 +9,7 @@ export default (state = initialstate, action) => {
     switch (action.type) {
         case ActionTypes.FETCH_REGISTER_SUCCESS: {
 
-            return { ...state,message:"Register Successfull" }
+            return { ...state, message: "Register Successfull" }
         }
 
         default:

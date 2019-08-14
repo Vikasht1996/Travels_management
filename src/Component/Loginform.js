@@ -1,10 +1,10 @@
 import '../css/Loginfrom.css'
 import BrowserHistory from '../utilize/BrowserHistory';
 import { success } from '../Action/Loginaction'
-import {handle} from '../Action/Registeraction'
+import { handle } from '../Action/Registeraction'
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {login} from '../Component/userfunction'
+import { login } from '../Component/userfunction'
 class Loginform extends Component {
   constructor(props) {
     super(props);
@@ -27,14 +27,13 @@ class Loginform extends Component {
     }
     login(reqst).then(res => {
       console.log(res);
-      if(res==="User does not exist" || res==="wrong password"){
+      if (res === "User does not exist" || res === "wrong password") {
         // alert(res)
-        }
-        else
-        {
-          BrowserHistory.push('/booknow');
-        }
-})
+      }
+      else {
+        BrowserHistory.push('/booknow');
+      }
+    })
     if (this.state.Email.length === 0 && this.state.Password.length === 0) {
       this.setState({
         uerr: "Email is required",
@@ -56,16 +55,15 @@ class Loginform extends Component {
     else {
       // BrowserHistory.push('/booknow')
     }
-    
+
   }
   onHandleClicks = () => {
     BrowserHistory.push('/signup')
     // const loginDetails = { username: this.state.username, password: this.state.password };
     // this.props.submitLogin(loginDetails);
   }
-  componentWillMount()
-  {
-       this.props.handle();
+  componentWillMount() {
+    this.props.handle();
   }
 
   render() {
@@ -75,16 +73,16 @@ class Loginform extends Component {
           <div class="row">
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm1">
-            {/* <p>{this.props.message}</p> */}
+              {/* <p>{this.props.message}</p> */}
 
               <h1>Login</h1>
-                <label ><b>Username</b></label><br />
-                <input type="text" name="Email" className="two" onChange={this.onHandleChange} /><br />
-                <p>{this.state.uerr}</p>
-                <label ><b>Password</b></label><br />
-                <input type="password" name="Password" className="two" onChange={this.onHandleChange} /><br /><br />
-                <p>{this.state.perr}</p>
-              
+              <label ><b>Username</b></label><br />
+              <input type="text" name="Email" className="two" onChange={this.onHandleChange} /><br />
+              <p>{this.state.uerr}</p>
+              <label ><b>Password</b></label><br />
+              <input type="password" name="Password" className="two" onChange={this.onHandleChange} /><br /><br />
+              <p>{this.state.perr}</p>
+
               <button onClick={this.onHandleClick} className="btn2"><b>Login</b></button><a href="" onClick={this.onHandleClicks}>Register</a>
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
@@ -94,7 +92,7 @@ class Loginform extends Component {
       </div>
     );
   }
-  
+
 }
 const mapStoreToProps = (state) => {
   // const { message } = state.Loginreducer;
@@ -103,4 +101,4 @@ const mapStoreToProps = (state) => {
 
   return { message };
 }
-export default connect(mapStoreToProps, { success,handle })(Loginform);
+export default connect(mapStoreToProps, { success, handle })(Loginform);

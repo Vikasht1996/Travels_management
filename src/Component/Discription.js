@@ -87,7 +87,7 @@ class Discription extends Component {
 
                       </div>
                       <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8"> */}
-                        {/* <div class="row">
+                  {/* <div class="row">
                           <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
                             <p>I am business man and every time i am going to business trip.
                                I shared my experiene.When i went to germany the hotels and restorents are
@@ -111,8 +111,8 @@ class Discription extends Component {
                             </div>
                           </div>
                         </div> */}
-                        <Slider/>
-                      {/* </div>
+                  <Slider />
+                  {/* </div>
                     </div>
                   </div> */}
                   {/* <div class="container">
@@ -203,13 +203,13 @@ class Discription extends Component {
                   </div>
                 </Tab>
                 <Tab><br /><br />
-                   <Review/>  
+                  <Review />
                 </Tab>
                 <Tab><br /><br />
-                  <Things/>
+                  <Things />
                 </Tab>
                 <Tab><br /><br />
-                <Write/>
+                  <Write />
                 </Tab>
               </Tabs>
             </div>
@@ -222,12 +222,12 @@ class Discription extends Component {
             </div>
             <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
               <span><a href="https://www.travel.com">www.travelmanagement.com</a></span>
-          <span><a href="https://www.facebook.com" class="fa fa-facebook"></a></span>
-          <span><a href="https://www.gmail.com" class="fa fa-google"></a></span>
-          <span><a href="https://www.instagram.com" class="fa fa-instagram"></a></span>
-          <span><a href="https://www.youtube.com" class="fa fa-youtube"></a></span>
-          <span><a href="https://www.linkedin.com" class="fa fa-linkedin"></a></span>
-          <span><a href="https://www.skype.com" class="fa fa-skype"></a></span>
+              <span><a href="https://www.facebook.com" class="fa fa-facebook"></a></span>
+              <span><a href="https://www.gmail.com" class="fa fa-google"></a></span>
+              <span><a href="https://www.instagram.com" class="fa fa-instagram"></a></span>
+              <span><a href="https://www.youtube.com" class="fa fa-youtube"></a></span>
+              <span><a href="https://www.linkedin.com" class="fa fa-linkedin"></a></span>
+              <span><a href="https://www.skype.com" class="fa fa-skype"></a></span>
             </div>
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <h6 class="fh6">copyright@2019</h6>

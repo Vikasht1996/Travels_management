@@ -5,29 +5,30 @@ class wherewhenwho extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      Name:'',
-    }}
-    onHandleChange = (event) => {
-      // this.setState({ [event.target.value]: event.target.value });
-      const Name =  event.target.value
-        this.setState({ Name })
+      Name: '',
     }
-    
-Search = async () => {
-  debugger
-  let path=this.state.Name;
-  BrowserHistory.push(`/${path}`); 
-}
-    render() {
-     
-        return (
-          <div>
-                <div class="container" class="loccontainer">
-                <div class="row">
+  }
+  onHandleChange = (event) => {
+    // this.setState({ [event.target.value]: event.target.value });
+    const Name = event.target.value
+    this.setState({ Name })
+  }
+
+  Search = async () => {
+    debugger
+    let path = this.state.Name;
+    BrowserHistory.push(`/${path}`);
+  }
+  render() {
+
+    return (
+      <div>
+        <div class="container" class="loccontainer">
+          <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
               <h3>Where</h3><br />
               <label ><b>Your Destination</b></label><br />
-              <input type="text" value= {this.state.Name}  onChange={this.onHandleChange} name="Name"/><br />
+              <input type="text" value={this.state.Name} onChange={this.onHandleChange} name="Name" /><br />
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
               <h3>When</h3><br />
@@ -79,12 +80,12 @@ Search = async () => {
               </div>
             </div>
             <div class="col-sm-1 col-lg-1 col-md-1 col-xs-1">
-              <button  onClick={this.Search} class="search">Search</button>
+              <button onClick={this.Search} class="search">Search</button>
             </div>
           </div><br /><br />
-                </div>
-            </div>
-        );
-    }
+        </div>
+      </div>
+    );
+  }
 }
 export default wherewhenwho;

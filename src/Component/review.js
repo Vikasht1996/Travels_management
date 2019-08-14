@@ -36,115 +36,115 @@ class review extends Component {
                         </div>
                         <div class="col-sm-8 col-lg-8 col-md-8 col-xs-8">
                             <div class="container" class="review">
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
-                                    <h2>Your overall Ratings for this property</h2>
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                                        <h2>Your overall Ratings for this property</h2>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
-                                <span class="fa fa-star rates"></span>
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+                                        <span class="fa fa-star rates"></span>
                                         <span class="fa fa-star rates"></span>
                                         <span class="fa fa-star rates"></span>
                                         <span class="fa fa-star rates"></span>
                                         <span class="fa fa-star rates1"></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <hr/>
-                            <div class="row">
-                                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <h6 class="blue">SERVICE</h6>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <h6 class="blue">SERVICE</h6>
+                                    </div>
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate1"></span>
+                                    </div>
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <h6 class="blue">VALUE</h6>
+                                    </div>
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate1"></span>
+                                    </div>
                                 </div>
-                                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                <span class="fa fa-star rate"></span>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <h6 class="blue">SLEEP QUALITY</h6>
+                                    </div>
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate1"></span>
                                     </div>
                                     <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <h6 class="blue">VALUE</h6>
+                                        <h6 class="blue">CLEANLINESS</h6>
                                     </div>
                                     <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate1"></span>
                                     </div>
-                            </div>
-                            <hr/>
-                            <div class="row">
-                                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <h6 class="blue">SLEEP QUALITY</h6>
                                 </div>
-                                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                <span class="fa fa-star rate"></span>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <h6 class="blue">LOCATION</h6>
+                                    </div>
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate1"></span>
                                     </div>
                                     <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <h6 class="blue">CLEANLINESS</h6>
+                                        <h6 class="blue">ROOMS</h6>
                                     </div>
                                     <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate1"></span>
                                     </div>
-                            </div>
-                            <hr/>
-                            <div class="row">
-                                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <h6 class="blue">LOCATION</h6>
                                 </div>
-                                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                <span class="fa fa-star rate"></span>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <h6 class="blue">SWIMMING POOL</h6>
+                                    </div>
+                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
+                                        <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate1"></span>
                                     </div>
                                     <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <h6 class="blue">ROOMS</h6>
+                                        <h6 class="blue">FITNESS FACILITIES</h6>
                                     </div>
                                     <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <span class="fa fa-star rate"></span>
+                                        <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate"></span>
                                         <span class="fa fa-star rate1"></span>
                                     </div>
-                            </div>
-                            <hr/>
-                            <div class="row">
-                                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <h6 class="blue">SWIMMING POOL</h6>
                                 </div>
-                                <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                <span class="fa fa-star rate"></span>
-                                        <span class="fa fa-star rate"></span>
-                                        <span class="fa fa-star rate"></span>
-                                        <span class="fa fa-star rate"></span>
-                                        <span class="fa fa-star rate1"></span>
-                                    </div>
-                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <h6 class="blue">FITNESS FACILITIES</h6>
-                                    </div>
-                                    <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3">
-                                    <span class="fa fa-star rate"></span>
-                                        <span class="fa fa-star rate"></span>
-                                        <span class="fa fa-star rate"></span>
-                                        <span class="fa fa-star rate"></span>
-                                        <span class="fa fa-star rate1"></span>
-                                    </div>
                             </div>
                         </div>
-                        </div>
-                    </div><br/><br/>
+                    </div><br /><br />
                 </div>
             </div>
         );

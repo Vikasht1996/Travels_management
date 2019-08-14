@@ -4,7 +4,7 @@ import '../css/Registrationfrom.css'
 import BrowserHistory from '../utilize/BrowserHistory'
 import { handle } from '../Action/Registeraction'
 import { success } from '../Action/Loginaction'
-import { signup,login } from './userfunction';
+import { signup, login } from './userfunction';
 
 class Registrationfrom extends Component {
   constructor(props) {
@@ -14,8 +14,8 @@ class Registrationfrom extends Component {
       Lastname: '',
       Email: '',
       Password: '',
-      ConfirmPassword:'',
-      Mobilenumber:'',
+      ConfirmPassword: '',
+      Mobilenumber: '',
       ferr: '',
       lerr: '',
       uerr: '',
@@ -39,13 +39,13 @@ class Registrationfrom extends Component {
       Password: this.state.Password
     }
     login(reqst).then(res => {
-      if(res.data==="Login successfully"){
+      if (res.data === "Login successfully") {
         alert("login succesfull")
         BrowserHistory.push('/booknow');
-        }
-        else
+      }
+      else
         alert("login fail")
-})
+    })
 
   }
 
@@ -63,14 +63,14 @@ class Registrationfrom extends Component {
 
     }
     signup(reqst).then(res => {
-      if(res.data==="User Created Succesfully"){
+      if (res.data === "User Created Succesfully") {
         alert("UserCreated Successfully")
         BrowserHistory.push('/login')
       }
-      
-})
-      
-      if (this.state.Firstname.length === 0 && this.state.Lastname.length === 0 && this.state.Email.length === 0 && this.state.Password.length === 0 && this.state.ConfirmPassword.length===0 && this.state.Mobilenumber.length===0) {
+
+    })
+
+    if (this.state.Firstname.length === 0 && this.state.Lastname.length === 0 && this.state.Email.length === 0 && this.state.Password.length === 0 && this.state.ConfirmPassword.length === 0 && this.state.Mobilenumber.length === 0) {
       this.setState({
         ferr: "Firstname is required", lerr: "Lastname is required",
         uerr: "Email is required",
@@ -133,27 +133,27 @@ class Registrationfrom extends Component {
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4"></div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4 frm">
               <h1>Signup</h1>
-              
-                <label><b>First Name</b></label><br />
-                <input type="text" name="Firstname" className="one" onChange={this.onHandleChange} /><br />
-                <p >{this.state.ferr}</p>
-                <label><b>Last Name</b></label><br />
-                <input type="text" name="Lastname" className="one" onChange={this.onHandleChange} /><br />
-                <p >{this.state.lerr}</p>
 
-                <label ><b>Email</b></label><br />
-                <input type="text" name="Email" className="one" onChange={this.onHandleChange} /><br />
-                <p >{this.state.uerr}</p>
-                <label ><b>Password</b></label><br />
-                <input type="password" name="Password" className="one" onChange={this.onHandleChange} /><br /><br />
-                <p >{this.state.perr}</p>
-                <label ><b>Confirmpassword</b></label><br />
-                <input type="password" name="ConfirmPassword" className="one" onChange={this.onHandleChange} /><br /><br />
-                <p >{this.state.cperr}</p>
-                <label ><b>Mobilenumber</b></label><br />
-                <input type="text" name="Mobilenumber" className="one" onChange={this.onHandleChange} /><br /><br />
-                <p >{this.state.phnerr}</p>
-                <button onClick={this.onHandleClick}  className="btn1"><b>Register</b></button><a href="" onClick={this.onHandleClicks}>Cancel</a>
+              <label><b>First Name</b></label><br />
+              <input type="text" name="Firstname" className="one" onChange={this.onHandleChange} /><br />
+              <p >{this.state.ferr}</p>
+              <label><b>Last Name</b></label><br />
+              <input type="text" name="Lastname" className="one" onChange={this.onHandleChange} /><br />
+              <p >{this.state.lerr}</p>
+
+              <label ><b>Email</b></label><br />
+              <input type="text" name="Email" className="one" onChange={this.onHandleChange} /><br />
+              <p >{this.state.uerr}</p>
+              <label ><b>Password</b></label><br />
+              <input type="password" name="Password" className="one" onChange={this.onHandleChange} /><br /><br />
+              <p >{this.state.perr}</p>
+              <label ><b>Confirmpassword</b></label><br />
+              <input type="password" name="ConfirmPassword" className="one" onChange={this.onHandleChange} /><br /><br />
+              <p >{this.state.cperr}</p>
+              <label ><b>Mobilenumber</b></label><br />
+              <input type="text" name="Mobilenumber" className="one" onChange={this.onHandleChange} /><br /><br />
+              <p >{this.state.phnerr}</p>
+              <button onClick={this.onHandleClick} className="btn1"><b>Register</b></button><a href="" onClick={this.onHandleClicks}>Cancel</a>
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xs-4">
             </div>
@@ -169,4 +169,4 @@ const mapStoreToProps = (state) => {
 
   return { message };
 };
-export default connect(mapStoreToProps,{handle,success})(Registrationfrom);
+export default connect(mapStoreToProps, { handle, success })(Registrationfrom);

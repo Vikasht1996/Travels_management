@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import {Elements, StripeProvider} from 'react-stripe-elements';
+import { Elements, StripeProvider } from 'react-stripe-elements';
 import Home from './Component/Home'
 import Hotels from './Component/hotel'
 import Discription from './Component/Discription'
@@ -16,7 +16,7 @@ import Modal from './Component/model'
 import Paris from './Component/paris'
 import London from './Component/london'
 import Singapore from './Component/singapore'
-import Dummy from './Component/dummy'
+// import Dummy from './Component/dummy'
 import writereview from './Component/writeareview'
 import CheckoutForm from './Component/CheckoutForm';
 
@@ -36,15 +36,15 @@ function App() {
         <Route exact path='/paris' component={Paris}></Route>
         <Route exact path='/london' component={London}></Route>
         <Route exact path='/singapore' component={Singapore}></Route>
-        <Route exact path='/dummy' component={Dummy}></Route>
+        {/* <Route exact path='/dummy' component={Dummy}></Route> */}
         <Route exact path='/writereview' component={writereview}></Route>
         <StripeProvider apiKey="pk_test_TYooMQauvdEDq54NiTphI7jx">
-        <div className="example">
-          <Elements>
-            <CheckoutForm />
-          </Elements>
-        </div>
-      </StripeProvider>
+          <div className="example">
+            <Elements>
+              <CheckoutForm />
+            </Elements>
+          </div>
+        </StripeProvider>
       </Switch>
     </Router>
   );

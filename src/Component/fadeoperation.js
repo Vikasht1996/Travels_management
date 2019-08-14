@@ -11,13 +11,13 @@ class fadeoperation extends Component {
         return (
             <div>
                 <div id="ritu" >
-                    <img src={hotel}/>
-                    <img src={hotel2}/>
-                    <img src={hotel3}/>
-                    <img src={hotel4}/>
-                    <img src={hotel5}/>
-                    <img src={hotel9}/>
-                </div>  
+                    <img src={hotel} />
+                    <img src={hotel2} />
+                    <img src={hotel3} />
+                    <img src={hotel4} />
+                    <img src={hotel5} />
+                    <img src={hotel9} />
+                </div>
             </div>
         );
     }

@@ -18,7 +18,7 @@ class paris extends Component {
     debugger;
     console.log("axios ====", axios)
     axios.get('http://localhost:8000/p')
-     
+
       .then((data) => {
         this.setState({ contacts: data.data.response });
       })

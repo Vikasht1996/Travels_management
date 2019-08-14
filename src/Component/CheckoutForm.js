@@ -1,51 +1,51 @@
-import React, {Component} from 'react';
-import {CardElement, injectStripe} from 'react-stripe-elements';
+import React, { Component } from 'react';
+import { CardElement, injectStripe } from 'react-stripe-elements';
 import logo from '../image/airlinelogo.png'
 import '../css/pay.css'
 
 class CheckoutForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {complete: false};
+    this.state = { complete: false };
     this.submit = this.submit.bind(this);
   }
 
   async submit(ev) {
-    let {token} = await this.props.stripe.createToken({name: "Name"});
+    let { token } = await this.props.stripe.createToken({ name: "Name" });
     let response = await fetch("/charge", {
       method: "POST",
-      headers: {"Content-Type": "text/plain"},
+      headers: { "Content-Type": "text/plain" },
       body: token.id
     });
-  
-    if (response.ok) 
-    alert("Your booking successfully")
+
+    if (response.ok)
+      alert("Your booking successfully")
     // if (response.ok) this.setState({complete: true})
   }
 
   render() {
     return (
       <div class="body" class="hoteldetails">
-      <div class="navbar ">
-        <span class="airlogo"><img src={logo} alt="golf" className="logoairline" /></span>
-        <span class="item2">Travels Management</span>
-        <span class="item3"><a href="home">Home</a></span>
-        <span class="item4"><a href="hotels">Hotels</a></span>
-        <span class="item4"><a href="#">Flights</a></span>
-        <span class="item4"><a href="#">Destination</a></span>
-      </div><br /><br />
+        <div class="navbar ">
+          <span class="airlogo"><img src={logo} alt="golf" className="logoairline" /></span>
+          <span class="item2">Travels Management</span>
+          <span class="item3"><a href="home">Home</a></span>
+          <span class="item4"><a href="hotels">Hotels</a></span>
+          <span class="item4"><a href="#">Flights</a></span>
+          <span class="item4"><a href="#">Destination</a></span>
+        </div><br /><br />
         <div class="container">
-            <div class="row">
+          <div class="row">
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>
             <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6">
-            <div className="checkout">
+              <div className="checkout">
                 <p>Would you like to book this hotel</p>
                 <CardElement />
-                <button  class="pay" onClick={this.submit}>Pay</button>
-            </div>
+                <button class="pay" onClick={this.submit}>Pay</button>
+              </div>
             </div>
             <div class="col-sm-3 col-lg-3 col-md-3 col-xs-3"></div>
-            </div>
+          </div>
         </div>
 
         <footer>
@@ -67,8 +67,8 @@ class CheckoutForm extends Component {
             </div>
           </div>
         </footer>
-        </div>
-        
+      </div>
+
     );
   }
 }

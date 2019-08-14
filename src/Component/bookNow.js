@@ -47,7 +47,7 @@ class bookNow extends Component {
     }
     personalInfo(reqst1).then(res => {
       // if (firstname && username && email && password && confirmPassword && mobileNumber) {
-BrowserHistory.push('/CheckoutForm')
+      BrowserHistory.push('/CheckoutForm')
     })
   }
   render() {
